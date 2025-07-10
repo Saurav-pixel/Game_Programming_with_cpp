@@ -53,4 +53,66 @@
 ---
 
 ## 📁 Project Structure
+ZombieArena/
+├── ZombieArena.cpp # Main game loop and event handling
+├── Player.cpp # Player movement, shooting, and health
+├── zombie.cpp # Zombie spawning and tracking logic
+├── bullet.cpp # Bullet firing, movement, and collisions
+├── pickup.cpp # Health and ammo pickup spawning and effects
+├── arena.cpp # Arena layout and boundaries
+├── assets/ # All textures, sounds, and screenshots
+└── README.md # This file
+
+
+---
+
+## ⚙️ Build & Run
+
+### 📌 Requirements
+
+- C++17 or later
+- [SFML 2.5+](https://www.sfml-dev.org/)
+- g++ or Visual Studio (or any C++ compiler)
+
+### 🧪 Compile
+
+#### Linux / macOS (Terminal)
+
+```bash
+g++ ZombieArena.cpp Player.cpp zombie.cpp bullet.cpp pickup.cpp arena.cpp \
+    -o ZombieArena \
+    -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+./ZombieArena
+
+
+Windows (Visual Studio)
+Create a new SFML project
+
+Add all .cpp files to the solution
+
+Link SFML libraries (graphics, window, system, audio)
+
+Build and run
+
+💡 Future Ideas
+🧠 Smarter zombie behavior (pathfinding)
+
+🌍 Larger arenas and multiple levels
+
+💥 Explosives and weapon upgrades
+
+💾 Save/load high scores
+
+🎮 Gamepad/controller support
+
+👤 Developer
+Saurav Kumar
+Assistant Professor, Dept. of CSE
+Siksha 'O' Anusandhan University
+📧 saurav@example.com
+
+📜 License
+This project is licensed under the MIT License.
+
+
 
